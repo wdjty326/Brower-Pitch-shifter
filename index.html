@@ -1,0 +1,51 @@
+<html>
+
+<body>
+	<div class="heading">
+		<h1>Brower Pitch shifter</h1>
+		<audio preload="auto" src="snak3.wav"></audio><button id="play-audio">play</button><button id="pause-audio">pause</button>
+	</div>
+	<div class="clearfix"></div>
+	<div class="control">
+		<label>
+			Pitch
+			<span class="value" id="pitch-value">0</span>
+			<button id="pitch-reset" class="reset">
+				reset
+			</button>
+			<!--select id="pitch-shift-type">
+				<option value="smooth">Smooth</option>
+				<option value="semi-tone">Semi-tone</option>
+			</select-->
+		</label>
+		<span class="mode-select">Mode: </span>
+		<label for="pitch_-0.5">
+			<input id="pitch_-0.5" type="radio" name="pitch" value="-0.5" />
+			-0.5
+		</label>
+		<label for="pitch_-0.25">
+			<input id="pitch_-0.25" type="radio" name="pitch" value="-0.25" />
+			-0.25
+		</label>
+		<label for="pitch_0">
+			<input id="pitch_0" type="radio" name="pitch" value="0" />
+			0
+		</label>
+		<label for="pitch_0.25">
+			<input id="pitch_0.25" type="radio" name="pitch" value="0.25" />
+			0.25
+		</label>
+		<label for="pitch_0.5">
+			<input id="pitch_0.5" type="radio" name="pitch" value="0.5" />
+			0.5
+		</label>
+		
+	</div>
+	<div class="clearfix"></div>
+	<script src="jungle.js"></script>
+	<script src="content_script.js"></script>
+	<script src="controls.js"></script>
+
+</body>
+
+</html>
